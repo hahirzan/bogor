@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;700&display=swap');
+
+body {
+   font-family: 'Recursive', cursive;
+    margin: 0;
+   padding: 0;
+}
+
+h2, h3, ol li {
+   color: #335d2d;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+.rata {
+           text-align: justify;
+       }
+
+.nomor {
+	       text-indent: -40px;
+	   }
+	   
+.nomor1 {
+	       text-indent: 0.1em;
+}
+
+nav a {
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: white;
+}
+
+nav a:hover {
+   font-weight: bold;
+}
+
+.profile header {
+   text-align: center;
+}
+
+footer {
+   padding: 20px;
+   color: white;
+   background-color: #335d2d;
+   text-align: center;
+   font-weight: bold;
+   margin-top: 20px;
+}
+
+.featured-image {
+   width: 100%;
+   max-height: 300px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.profile img {
+   width: 125px;
+}
+
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 2px 15px 5px 15px;
+   margin-top: 20px;
+}
+
+.makaneru {
+   font-size: 20px;
+   padding: 60px;
+   background-color: #335d2d;
+   text-align: center;
+   color: white;
+}
+.makanerus {
+   text-align: center;
+}
+
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+
+nav {
+   background-color: #7ea04d;
+   padding: 5px;
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
+
+main {
+   padding: 15px;
+   overflow: auto;
+}
+
+#content {
+   float: left;
+   width: 75%;
+}
+
+aside {
+   float: right;
+   width: 25%;
+   padding-left: 20px;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+.something {
+	position: relative;
+	bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+   #content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+}
+		
+header {
+   display: inline;
+}
+		
+.new {
+    position: relative;
+    top: 25px;
+}
+
+#slide0 {
+  max-width: 999px;
+  position: relative;
+  margin: auto;
+}
+
+.slide1 {
+  display: none;
+}
+
+.prevslide, .nextslide {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -19px;
+  padding: 20px;
+  color: white;
+  transition: 1.0s ease;
+  border-radius: 0 4px 4px 0;
+  user-select: none;
+}
+
+.nextslide {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.prevslide:hover, .nextslide:hover {
+  background-color: rgba(0,0,0,1.0);
+}
+
+.slide2 {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 3px;
+  background-color: #7ea04d;
+  border-radius: 49%;
+  display: inline-block;
+  transition: background-color 1.0s ease;
+}
+
+.berjalan, .slide2:hover {
+  background-color: #ffff;
+}
+
+.efek {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.9s;
+  animation-name: fade;
+  animation-duration: 0.9s;
+}
+
+@-webkit-keyframes efek {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+@keyframes efek {
+  from {opacity: .5}
+  to {opacity: 1}
+}
